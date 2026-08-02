@@ -3,134 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin — Writing at the center</title>
     <meta
       name="description"
-      content="Odin — a writing environment for researchers. Manuscript, figures, references, and review in one bundle."
+      content="Odin is a native writing app for Mac, iPad, and iPhone. One project bundle holds your manuscript, figures, references, and history."
     />
-    <title>Odin — Scholarly writing, forged in one place</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9874;</text></svg>" />
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
-      <div class="wrap">
-        <span class="logo">&#9874; Odin</span>
-        <nav>
-          <a href="#features">Features</a>
-          <a href="#collaborate">Collaborate</a>
-          <a href="#philosophy">Philosophy</a>
-        </nav>
-      </div>
+      <a class="wordmark" href="#top" aria-label="Odin home">Odin</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#bundle">Bundle</a>
+        <a href="#writing">Writing</a>
+        <a href="#capabilities">Capabilities</a>
+        <a class="nav-cta" href="#download">Get Odin</a>
+      </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="wrap">
-          <h1>Scholarly writing,<br />forged in one place.</h1>
-          <p class="lede">
-            Odin is a writing environment for researchers. Your manuscript, figures, references,
-            and review threads live in a single project bundle &mdash; not scattered across
-            Desktop, Downloads, and half a dozen apps.
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-brand">
+        <div class="hero-atmosphere" aria-hidden="true"></div>
+        <img
+          class="hero-raven"
+          src="/assets/odin-raven.jpg"
+          alt=""
+          width="1200"
+          height="1200"
+          decoding="async"
+        />
+        <div class="hero-veil" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <p class="hero-brand" id="hero-brand">ODIN</p>
+          <h1 class="hero-title">One project. One bundle.</h1>
+          <p class="hero-tagline" data-tagline aria-live="polite">
+            Where writing takes shape.
           </p>
-          <div class="cta-row">
-            <a class="btn primary" href="#collaborate">Open a shared project</a>
-            <a class="btn" href="#features">See how it works</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download">Download for Mac</a>
+            <a class="btn btn-ghost" href="#waitlist">Join the waitlist</a>
           </div>
+          <p class="hero-platforms">Mac · iPad · iPhone</p>
         </div>
       </section>
 
-      <section id="features" class="features">
-        <div class="wrap">
-          <h2>One bundle. Every artifact.</h2>
-          <div class="grid">
-            <article>
-              <h3>Write first</h3>
-              <p>
-                A distraction-free manuscript editor with real Markdown underneath. The writing
-                column dominates; tools appear only when the work demands them.
-              </p>
-            </article>
-            <article>
-              <h3>References built in</h3>
-              <p>
-                Import by DOI or BibTeX, cite with <code>[@key]</code>, and export with a formatted
-                bibliography. No external reference manager required.
-              </p>
-            </article>
-            <article>
-              <h3>Figures without the mess</h3>
-              <p>
-                Figures live alongside the text in the project bundle and travel with it —
-                publish-ready when you are.
-              </p>
-            </article>
-            <article>
-              <h3>Versioned by default</h3>
-              <p>
-                Every save is history. Sync to GitHub with plain-language actions: publish, save
-                changes, get latest.
-              </p>
-            </article>
-            <article>
-              <h3>Review threads</h3>
-              <p>
-                Committee members and co-authors leave anchored comments right in the manuscript —
-                no PDF ping-pong.
-              </p>
-            </article>
-            <article>
-              <h3>Export anywhere</h3>
-              <p>Markdown, HTML, DOCX, and PDF from the same source. One manuscript, many outputs.</p>
-            </article>
+      <section class="section problem" id="problem" aria-labelledby="problem-title">
+        <div class="section-inner reveal">
+          <p class="eyebrow">The problem</p>
+          <h2 id="problem-title">Your project lives in too many places.</h2>
+          <p class="lead">
+            Manuscripts in one app. Figures in a folder. Citations in another tab.
+            Drafts and notes scattered until you alone can hold the whole thing
+            in your head.
+          </p>
+          <p class="lead emphasis">
+            Odin holds the project — so you can write.
+          </p>
+        </div>
+      </section>
+
+      <section class="section bundle" id="bundle" aria-labelledby="bundle-title">
+        <div class="section-inner reveal">
+          <p class="eyebrow">The bundle</p>
+          <h2 id="bundle-title">Everything travels together.</h2>
+          <p class="lead">
+            An <code>.odin</code> package is the project: manuscript sections,
+            figures, references, review threads, and history — one file to open,
+            share, or sync.
+          </p>
+          <ul class="bundle-list">
+            <li><span>Manuscript</span> Sections as plain Markdown</li>
+            <li><span>Figures</span> Full-resolution originals + editor previews</li>
+            <li><span>References</span> Citations that stay with the work</li>
+            <li><span>History</span> Checkpoints when you need them</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section writing" id="writing" aria-labelledby="writing-title">
+        <div class="section-inner reveal">
+          <p class="eyebrow">The surface</p>
+          <h2 id="writing-title">Writing stays at the center.</h2>
+          <p class="lead">
+            Binder on one side, tools when you need them — never a maze of apps.
+            Panels, sheets, and modes come to the manuscript. The prose column
+            stays quiet.
+          </p>
+          <p class="platforms-line">Native on Mac, iPad, and iPhone. One library via iCloud when you want it.</p>
+        </div>
+      </section>
+
+      <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-inner reveal">
+          <p class="eyebrow">What ships with the craft</p>
+          <h2 id="capabilities-title">Built for the work, not a feature matrix.</h2>
+          <ul class="capability-strip">
+            <li>
+              <strong>Editor</strong>
+              <span>Shape the manuscript where you write.</span>
+            </li>
+            <li>
+              <strong>References</strong>
+              <span>Cite without leaving the page.</span>
+            </li>
+            <li>
+              <strong>Export</strong>
+              <span>Markdown, HTML, DOCX, PDF, LaTeX.</span>
+            </li>
+            <li>
+              <strong>Sync &amp; collab</strong>
+              <span>GitHub publish, iCloud library, shared review.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section cta-band" id="download" aria-labelledby="cta-title">
+        <div class="section-inner reveal">
+          <h2 id="cta-title">Ready when you are.</h2>
+          <p class="lead">
+            Download links and the public waitlist are coming soon. These buttons
+            are placeholders for now.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download" aria-disabled="true">Download for Mac</a>
+            <a class="btn btn-ghost" href="#waitlist">Join the waitlist</a>
           </div>
-        </div>
-      </section>
-
-      <section id="collaborate" class="collaborate">
-        <div class="wrap">
-          <h2>Collaborate through Odin Web</h2>
-          <p>
-            Authors write in native Odin on Mac and iPad. Collaborators need nothing but a browser
-            and a free GitHub account: open the invite link, sign in, edit sections, and leave
-            review comments. Changes flow back to the author through GitHub.
-          </p>
-          <ol class="steps">
-            <li>Author publishes the project to GitHub from Odin.</li>
-            <li>Author invites collaborators to the repository.</li>
-            <li>Collaborators sign in to Odin Web with their own GitHub account.</li>
-            <li>Everyone edits and reviews; Odin keeps the history.</li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="philosophy" class="philosophy">
-        <div class="wrap">
-          <h2>The anvil came first</h2>
-          <blockquote>
-            Hephaestus didn&rsquo;t architect a workshop and then populate it. He landed, and he
-            started working &mdash; the tools emerged from the act of making.
-          </blockquote>
-          <p>
-            Odin is built the same way. You don&rsquo;t build the project; you discover it. Each
-            tool exists because the act of writing demanded it &mdash; not because a roadmap said
-            so. If a feature doesn&rsquo;t emerge from genuine friction felt while working, it
-            doesn&rsquo;t belong.
-          </p>
+          <p id="waitlist" class="cta-note">Waitlist signup will live here.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="wrap">
-        <span>&#9874; Odin</span>
-        <span class="muted">Manuscripts, forged.</span>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="/assets/app-icon.png" alt="" width="40" height="40" />
+          <span>Odin</span>
+        </div>
+        <p class="footer-tag">Your workspace. Writing at the center.</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#bundle">Bundle</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#download">Get Odin</a>
+        </nav>
+        <p class="footer-copy">© <span data-year></span> Odin. All rights reserved.</p>
       </div>
     </footer>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

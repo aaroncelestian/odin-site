@@ -1,23 +1,28 @@
-# Odin website
+# Odin — Marketing Site
 
-Static landing page for Odin — no build step, just `index.html` + `style.css`.
+Self-contained landing page for Odin. Built with Vite + vanilla HTML/CSS/JS so this folder can be copied into its own repo or Cursor window without depending on the Xcode project.
 
-## Preview locally
-
-```bash
-open index.html
-```
-
-or serve it:
+## Run locally
 
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-## Publish with GitHub Pages
+## Build for static hosting
 
-1. Create a repo (e.g. `odin-site`) and push this folder.
-2. Repo → Settings → Pages → Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. Your site goes live at `https://<username>.github.io/odin-site/`.
+```bash
+npm run build
+```
 
-Use that URL as the **Homepage URL** when registering the Odin Web GitHub OAuth app.
+Output lands in `dist/`. Preview with `npm run preview`.
+
+## Notes
+
+- Primary and secondary CTAs are placeholders (`#download`, `#waitlist`) until App Store / download URLs exist.
+- Brand assets live in `public/assets/` (optimized copies — not linked to the app bundle).
+  - `odin-raven.jpg` — web-sized raven mark for the hero
+  - `favicon.png` / `app-icon.png` — from the app icon set
+- The hero subtitle rotates through the same tagline set as the native welcome screen.
+- Deploy `dist/` to Netlify, GitHub Pages, or any static host when ready.
+
