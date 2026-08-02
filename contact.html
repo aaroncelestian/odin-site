@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Odin</title>
+    <meta
+      name="description"
+      content="Get in touch about Odin — questions, feedback, or waitlist interest."
+    />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="page-doc">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header site-header-solid">
+      <a class="wordmark" href="./" aria-label="Odin home">Odin</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./#bundle">Bundle</a>
+        <a href="./#capabilities">Capabilities</a>
+        <a class="nav-cta" href="./#download">Get Odin</a>
+      </nav>
+    </header>
+
+    <main id="main" class="doc-main">
+      <article class="doc reveal is-visible">
+        <p class="eyebrow">Contact</p>
+        <h1>Say hello.</h1>
+        <p class="lead">
+          Questions, feedback, or waitlist interest — send a note and we’ll get
+          back to you.
+        </p>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mdaqqkpy"
+          method="POST"
+        >
+          <label>
+            Your email
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>
+            Your message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="/assets/app-icon.png" alt="" width="40" height="40" />
+          <span>Odin</span>
+        </div>
+        <p class="footer-tag">Your workspace. Writing at the center.</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="./#bundle">Bundle</a>
+          <a href="./#capabilities">Capabilities</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="./#download">Get Odin</a>
+        </nav>
+        <p class="footer-copy">© <span data-year></span> Odin. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
