@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy — Odin</title>
+    <meta
+      name="description"
+      content="How Odin handles your writing, project bundles, optional sync, and network features. Local-first by design."
+    />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="page-doc">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header site-header-solid">
+      <a class="wordmark" href="/" aria-label="Odin home">Odin</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/#bundle">Bundle</a>
+        <a href="/#capabilities">Capabilities</a>
+        <a class="nav-cta" href="/#download">Get Odin</a>
+      </nav>
+    </header>
+
+    <main id="main" class="doc-main">
+      <article class="doc reveal is-visible">
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy</h1>
+        <p class="doc-meta">Last updated: August 2, 2026</p>
+        <p class="lead">
+          Odin is built to keep your writing with you. Your manuscripts live in
+          project bundles you control. We do not sell your content, and the app
+          does not include third-party advertising or analytics SDKs.
+        </p>
+
+        <h2>What Odin is</h2>
+        <p>
+          Odin is a native writing app for Mac, iPad, and iPhone. Each project is
+          an <code>.odin</code> package on disk: manuscript sections, figures,
+          references, review threads, templates you import, and local history.
+          You open, move, back up, and delete those packages like any other files.
+        </p>
+
+        <h2>Data we do not collect</h2>
+        <p>As of this policy, the Odin app and this marketing site do not:</p>
+        <ul>
+          <li>Run advertising networks or sell personal information</li>
+          <li>Embed third-party analytics or crash-reporting SDKs in the app</li>
+          <li>Upload your manuscript to an Odin-operated cloud by default</li>
+          <li>Require an Odin account to write</li>
+        </ul>
+
+        <h2>Information on your devices</h2>
+        <p>Odin stores project and preference data locally, including:</p>
+        <ul>
+          <li>
+            <strong>Project bundles</strong> — in your chosen library folder
+            (by default iCloud Drive / Odin when iCloud is available, otherwise
+            on-device Documents / Odin), or another folder you select
+          </li>
+          <li>
+            <strong>App preferences</strong> — settings such as formatting-bar
+            layout, recent projects, and notification options (via system
+            storage such as UserDefaults)
+          </li>
+          <li>
+            <strong>Credentials you connect</strong> — if you sign in to GitHub,
+            the OAuth token and account login are stored in the system Keychain
+            on your device
+          </li>
+          <li>
+            <strong>Global reference library</strong> — a cross-project
+            bibliography kept in Application Support on the device
+          </li>
+        </ul>
+        <p>
+          You can remove projects by deleting their bundles, disconnect GitHub
+          from within the app, and clear app data by removing the app (and any
+          Keychain items associated with it, subject to system behavior).
+        </p>
+
+        <h2>Optional services you choose</h2>
+        <p>
+          Some features only run when you turn them on or take an explicit
+          action. Those services receive only what is needed for that action.
+        </p>
+
+        <h3>Apple iCloud</h3>
+        <p>
+          If you use the default library location on iCloud Drive, your
+          <code>.odin</code> packages sync through Apple’s iCloud under your
+          Apple ID. Odin does not operate a separate cloud database for
+          projects. Apple’s handling of iCloud data is governed by
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer"
+            >Apple’s Privacy Policy</a
+          >.
+        </p>
+
+        <h3>GitHub sync and collaboration</h3>
+        <p>
+          If you publish or sync a project with GitHub, Odin uses GitHub OAuth
+          (via the system browser / authentication session) and communicates
+          with GitHub’s APIs to create or update repositories you choose. Your
+          manuscript and related bundle files go to <em>your</em> GitHub account
+          (typically a private repository you control). GitHub’s processing is
+          governed by
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener noreferrer"
+            >GitHub’s Privacy Statement</a
+          >.
+        </p>
+        <p>
+          Shared review comments live in the project bundle
+          (<code>Review/threads.json</code>) and travel with that GitHub
+          repository when you sync. Optional web collaboration uses the
+          separate Odin Web Editor at a site you open by invite link; that
+          editor works against the same GitHub project rather than an Odin
+          content vault.
+        </p>
+
+        <h3>Reference lookup (DOI)</h3>
+        <p>
+          When you import a citation by DOI, Odin requests metadata from
+          Crossref (<code>api.crossref.org</code>) for that DOI. The request
+          includes the DOI you entered; Crossref’s own policies apply to their
+          service.
+        </p>
+
+        <h3>Notifications</h3>
+        <p>
+          On Mac, optional remote-update notifications can alert you when a
+          published project has new remote changes. That feature uses your local
+          GitHub credentials and preferences you set in the app; notification
+          permission is requested through the system when you enable it.
+        </p>
+
+        <h3>Local asset helper</h3>
+        <p>
+          Figure previews may use a local asset sidecar on your machine
+          (loopback HTTP). It is not an Odin-operated internet service for
+          storing your writing.
+        </p>
+
+        <h2>This website</h2>
+        <p>
+          The Odin marketing site is a static page. It may use browser
+          <code>localStorage</code> for small presentation details (for example,
+          rotating a welcome tagline). If a waitlist or download form is added
+          later, that form will state what is collected and where it is stored
+          before you submit.
+        </p>
+        <p>
+          Hosting providers (for example Netlify or similar) may log standard
+          technical data such as IP address and request metadata in order to
+          serve the site. Those logs are controlled by the host’s policies.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          Odin is not directed at children under 13, and we do not knowingly
+          collect personal information from children.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          If this policy changes in a material way, we will update the “Last
+          updated” date on this page. Continued use of Odin or this site after
+          an update means you have had a chance to review the revised policy.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions about privacy in Odin can be sent through the
+          <a href="https://github.com/aaroncelestian/Odin/issues" rel="noopener noreferrer"
+            >Odin GitHub repository</a
+          >
+          or the contact channel listed with the app when it is published on the
+          App Store.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="/assets/app-icon.png" alt="" width="40" height="40" />
+          <span>Odin</span>
+        </div>
+        <p class="footer-tag">Your workspace. Writing at the center.</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/#bundle">Bundle</a>
+          <a href="/#capabilities">Capabilities</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/#download">Get Odin</a>
+        </nav>
+        <p class="footer-copy">© <span data-year></span> Odin. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -17,6 +17,13 @@ npm run build
 
 Output lands in `dist/`. Preview with `npm run preview`.
 
+## Pages
+
+| Path | Purpose |
+|------|---------|
+| `/` | Landing |
+| `/privacy.html` | Privacy policy |
+
 ## Notes
 
 - Primary and secondary CTAs are placeholders (`#download`, `#waitlist`) until App Store / download URLs exist.

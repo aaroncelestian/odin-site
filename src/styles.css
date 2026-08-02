@@ -84,6 +84,12 @@ code {
   pointer-events: none;
 }
 
+.site-header-solid {
+  background: rgba(18, 20, 23, 0.94);
+  border-bottom: 1px solid rgba(200, 205, 212, 0.08);
+  backdrop-filter: blur(12px);
+}
+
 .site-header a {
   pointer-events: auto;
 }
@@ -606,6 +612,90 @@ code {
   margin: 0.5rem 0 0;
   font-size: 0.85rem;
   color: rgba(200, 205, 212, 0.45);
+}
+
+/* Document / legal pages */
+
+.page-doc {
+  background:
+    radial-gradient(ellipse 70% 45% at 80% -10%, rgba(58, 124, 165, 0.14), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 0% 30%, rgba(184, 115, 51, 0.08), transparent 50%),
+    var(--ink);
+}
+
+.doc-main {
+  padding: clamp(6.5rem, 14vh, 8.5rem) 0 clamp(3rem, 8vh, 5rem);
+}
+
+.doc {
+  width: min(100%, 42rem);
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.doc h1 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.doc-meta {
+  margin: 0 0 1.75rem;
+  font-size: 0.9rem;
+  color: rgba(200, 205, 212, 0.55);
+}
+
+.doc h2 {
+  margin: 2.4rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.doc h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--paper);
+}
+
+.doc p,
+.doc li {
+  color: var(--mist);
+}
+
+.doc p {
+  margin: 0 0 1rem;
+}
+
+.doc ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.2rem;
+}
+
+.doc li {
+  margin-bottom: 0.45rem;
+}
+
+.doc a {
+  color: var(--bronze-bright);
+}
+
+.doc a:hover {
+  color: var(--white);
+}
+
+.doc .lead {
+  margin-bottom: 1.5rem;
+  color: var(--paper);
 }
 
 @media (prefers-reduced-motion: reduce) {
